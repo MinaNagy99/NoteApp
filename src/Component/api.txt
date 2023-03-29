@@ -1,0 +1,74 @@
+=================Base URL=============
+https://route-movies-api.vercel.app/
+---------------Login API --------------
+https://route-movies-api.vercel.app/signin
+Method:POST
+Json Format:
+{
+	
+   "email":"ahmed@ahmed.com",
+   "password":"Ahmed@123"
+}
+
+----------All Users Api----------------------
+https://route-movies-api.vercel.app/getAllUsers
+Method:GET
+---------Registration  API------------------------
+https://route-movies-api.vercel.app/signup
+Method:Post
+json=
+{
+	"first_name":"muti",
+	"last_name":"muti",
+        "email":"ahmed@ahmed.com",
+        "password":"Ahmed@123",
+	"age":30
+}
+--------------LogOut Api-----------------
+https://route-movies-api.vercel.app/signOut
+Method:POST
+json format 
+{
+	 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaXRpemVuIjoiY2l0aXplbiIsImlhdCI6MTU5MDc0ODM5NX0.IGyOIV5b9h6-vC6_955wbgL1pLmdu3d0E4cHIqKEXlU"
+}
+
+-------------------------notes--------------------------------------
+https://route-movies-api.vercel.app/updateNote
+Method:PUT
+json format 
+{
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaXRpemVuIjoiY2l0aXplbiIsImlhdCI6MTU5MTAxMTc3OX0.mIiwIzd_dwPHxJElRdTZaUEUMHBc1eMyw93JyEiB0Ho",
+
+"title":"Updated2",
+"desc":"test test test",
+"NoteID":"5ed5632bf70b001928944ec8"
+}
+============================
+https://route-movies-api.vercel.app/deleteNote
+Method:Delete
+json format 
+{
+"NoteID":"5ed4e92fc457b10b502c716a",
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaXRpemVuIjoiY2l0aXplbiIsImlhdCI6MTU5MTAxMTc3OX0.mIiwIzd_dwPHxJElRdTZaUEUMHBc1eMyw93JyEiB0Ho"
+}
+============================
+https://route-movies-api.vercel.app/getUserNotes
+Method:get
+json format
+{
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaXRpemVuIjoiY2l0aXplbiIsImlhdCI6MTU5MTAxMTc3OX0.mIiwIzd_dwPHxJElRdTZaUEUMHBc1eMyw93JyEiB0Ho",
+"userID":"5ed2960071fb8f001781e34b"
+}
+============================
+https://route-movies-api.vercel.app/addNote
+Method:POST
+json format
+{
+
+"title":"Route task2",
+"desc":"thank u bank misr",
+"userID":"5ed2960071fb8f001781e34b",
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaXRpemVuIjoiY2l0aXplbiIsImlhdCI6MTU5MTU0ODUzOH0.hP7fagPSqzu9zDAODAvDtCHs_qqONENLOtSLAmtA4eo"
+}
+============================
+
